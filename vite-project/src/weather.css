@@ -1,0 +1,223 @@
+#root {
+  max-width: 1280px;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  max-height: 400px;
+}
+body {
+  background-color: #b5d6d6;
+  margin: 0;
+  padding: 0;
+  overflow: scroll;
+}
+
+.bod {
+  margin: 0px;
+  padding: 0px;
+  width: 1520px;
+  /* height: 1080px; */
+  overflow: hidden;
+}
+.master {
+  position: relative;
+
+  top: -190px;
+  width: 100%;
+  height: 100%;
+}
+
+.Rains {
+  position: relative;
+  top: 281px;
+  left: -13px;
+  width: 100%;
+  height: 100%;
+}
+
+.date,
+.location {
+  color: black;
+  width: 80%;
+  padding-left: 400px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+}
+
+.date {
+  padding-top: 100px;
+}
+
+.temp {
+  color: black;
+  position: relative;
+  top: -81px;
+  left: 800px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 40px;
+  text-align: left;
+}
+
+.girl {
+  position: relative;
+  top: -220px;
+  left: -36px;
+}
+
+.master2 {
+  position: relative;
+  top: -228px;
+}
+
+.Clouds {
+  position: relative;
+}
+
+.day,
+.type {
+  position: relative;
+  font-family: "Josefin Sans", sans-serif;
+  text-align: left;
+}
+
+.day {
+  top: -235px;
+  left: 638px;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 28px;
+}
+.words {
+  position: relative;
+  left: -700px;
+}
+.type {
+  top: -227px;
+  left: 677px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.master3 {
+  width: 1513px;
+  height: 500px;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 50px 50px 0 0;
+  position: relative;
+  top: -432px;
+  left: 4px;
+}
+
+#yesterday,
+.today,
+#tomorrow {
+  position: relative;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 22px;
+  line-height: 22px;
+}
+
+#yesterday {
+  left: 40px;
+  top: 19px;
+  font-weight: 500;
+}
+
+.today {
+  left: 667px;
+  top: -13px;
+  font-weight: 700;
+}
+
+#tomorrow {
+  left: 1357px;
+  top: -73px;
+  font-weight: 500;
+}
+
+.o1,
+.o11 {
+  width: 74px;
+  height: 150px;
+  border-radius: 44px;
+  position: relative;
+  border: 1px solid #b5d6d6;
+}
+
+.o1 {
+  background-color: #e5f2f2;
+  left: 375px;
+}
+
+.o11 {
+  background-color: #fee68b;
+  border: 1px solid #f6d9a8;
+  box-shadow: 0 4px 10px 4px rgba(255, 235, 139, 0.3); /* Use rgba for transparency */
+  left: 375px;
+  top: -20px;
+}
+
+.o2,
+.o22 {
+  position: relative;
+  font-size: 17px;
+  top: 10px;
+
+  font-family: "Josefin Sans", sans-serif;
+}
+
+#icon {
+  position: relative;
+  top: 0;
+  left: 3px;
+  font-size: 25px;
+}
+
+.tempr {
+  position: relative;
+  left: 2px;
+}
+
+.hours {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 16px;
+  position: relative;
+  left: -60px;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #000;
+  position: relative;
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-color: transparent;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease-in-out;
+}
+
+button:hover {
+  color: orange;
+}
+
+button:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
